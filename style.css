@@ -1,0 +1,78 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  text-align: right;
+  min-height: 120px;
+}
+
+/* Mueve la imagen a la izquierda */
+header img { float: left; }
+
+#logo {
+  width: 100px
+}
+header nav {
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  float: right;
+  display: flex;
+}
+header nav .link {
+  background-color: #007aff;
+  padding: 5px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-family: arial;
+  border-right: 2px solid black;
+}
+header nav .link:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+header nav .link:last-child {
+  border-right: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;  
+}
+header nav .link:hover {
+  background-color: #0054b1;
+}
+
+section {
+  text-align: center;
+}
+section img {
+  width: 50%
+}
+section p {
+  text-align: justify;
+}
+section p span {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.calcetas {
+  display: flex;
+  justify-content:space-between;
+  padding-bottom: 2em;
+}
+.calcetas img:first-child {
+  width: 300px;
+}
+.calcetas img:last-child {
+  width: 274px;
+  background-color: #2b5b84;
+  border-radius: 3px;
+}
